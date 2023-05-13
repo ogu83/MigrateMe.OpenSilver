@@ -3,13 +3,21 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.33424.131
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MigrateMe.OpenSilver", "MigrateMe\MigrateMe.OpenSilver.csproj", "{4AB2ECD6-9BB1-4B8A-BB9B-EEEE2687E5CC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MigrateMe.OpenSilver", "MigrateMe\MigrateMe.OpenSilver.csproj", "{4AB2ECD6-9BB1-4B8A-BB9B-EEEE2687E5CC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MigrateMe.Browser", "MigrateMe.Browser\MigrateMe.Browser.csproj", "{1A6FBF2F-2FBE-4C86-A62D-38157156D029}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MigrateMe.Browser", "MigrateMe.Browser\MigrateMe.Browser.csproj", "{1A6FBF2F-2FBE-4C86-A62D-38157156D029}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MigrateMe.Simulator", "MigrateMe.Simulator\MigrateMe.Simulator.csproj", "{91952FC0-1F72-4A01-98BD-69A44349B456}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MigrateMe.Simulator", "MigrateMe.Simulator\MigrateMe.Simulator.csproj", "{91952FC0-1F72-4A01-98BD-69A44349B456}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MigrateMe.Controls.OpenSilver", "MigrateMe.Controls\MigrateMe.Controls.OpenSilver.csproj", "{1489DF16-CE56-4FF6-8D90-69247CD23BA7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MigrateMe.Controls.OpenSilver", "MigrateMe.Controls\MigrateMe.Controls.OpenSilver.csproj", "{1489DF16-CE56-4FF6-8D90-69247CD23BA7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SolutionItems", "SolutionItems", "{076B9FBE-49B2-4A19-AE19-89C8FF52A449}"
+	ProjectSection(SolutionItems) = preProject
+		nuget.config = nuget.config
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PrivatePackages", "PrivatePackages", "{4BE7894C-F2FD-4C46-8F2C-5546F1F26802}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
