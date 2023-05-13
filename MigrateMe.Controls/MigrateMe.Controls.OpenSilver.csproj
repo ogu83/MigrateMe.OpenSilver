@@ -1,0 +1,42 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <EnableDefaultItems>false</EnableDefaultItems>
+	<DefineSilverlight>true</DefineSilverlight>
+	<AssemblyName>MigrateMe.Controls</AssemblyName>
+	<RootNamespace>MigrateMe.Controls</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="OpenSilver" Version="1.2.0-preview-2023-05-12-165411-b2e5c0ea" />
+  </ItemGroup>
+
+	<ItemGroup>
+    <Compile Include="SpecialButton.cs" />
+    <Compile Include="SpecialClock.xaml.cs">
+      <DependentUpon>SpecialClock.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SpecialLogin.xaml.cs">
+      <DependentUpon>SpecialLogin.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="SpecialClock.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SpecialLogin.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Themes\Generic.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Properties\" />
+  </ItemGroup>
+  
+</Project>

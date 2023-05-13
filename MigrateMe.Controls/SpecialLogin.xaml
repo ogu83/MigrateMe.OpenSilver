@@ -1,0 +1,40 @@
+﻿<UserControl x:Class="MigrateMe.Controls.SpecialLogin"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:controls="clr-namespace:MigrateMe.Controls;assembly=MigrateMe.Controls"
+    mc:Ignorable="d"
+    FontSize="14"
+    d:DesignHeight="200" d:DesignWidth="400">
+    <Border x:Name="LayoutRoot" Background="Silver" CornerRadius="10" Margin="5">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="2*" />
+            </Grid.ColumnDefinitions>
+            <TextBlock x:Name="lblUsername" Text="Username" VerticalAlignment="Center" HorizontalAlignment="Center" Grid.Row="0" Grid.Column="0" />
+            <TextBlock x:Name="lblPassword" Text="Password" VerticalAlignment="Center" HorizontalAlignment="Center" Grid.Row="1" Grid.Column="0" />
+            <TextBox x:Name="txtUsername" Grid.Row="0" Grid.Column="1" Margin="5" VerticalContentAlignment="Center" />
+            <PasswordBox x:Name="txtPassword" Grid.Row="1" Grid.Column="1" Margin="5" VerticalContentAlignment="Center" />
+            <StackPanel Margin="5" Grid.Row="2" Grid.ColumnSpan="2" Orientation="Horizontal">
+                <controls:SpecialButton x:Name="btnLogin" Width="100" Margin="5">
+                    <StackPanel Orientation="Horizontal">
+                        <Path Data="M 15 5 L 25 20 5 20 Z"
+                            StrokeThickness="2"
+                            StrokeLineJoin="Round"
+                            Stroke="Red"
+                            Fill="Blue" Width="32" Height="32"/>
+                        <TextBlock Text="Login" Margin="5" />
+                    </StackPanel>
+                </controls:SpecialButton>
+                <controls:SpecialButton x:Name="btnCancel" Content="Cancel" Width="100" Margin="5" Click="btnCancel_Click" />
+            </StackPanel>
+        </Grid>
+    </Border>
+</UserControl>
